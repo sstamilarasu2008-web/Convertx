@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ConvertX</title>
+    <link rel="icon" type="image/png" href="Screenshot_24-8-2026_201329_web.whatsapp.com.jpeg">
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+        }
+
+        body {
+            background: #05060d;
+            color: #ffffff;
+        }
+
+        /* ================= NAVBAR ================= */
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(16, 17, 27);
+    box-shadow: rgb(249, 249, 250) 0px 2px 3px -10px;
+    border-bottom: 1px solid rgb(49, 3, 255);
+}
+
+.navbar button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    top: -30px;
+    position: relative;
+    left: 800px;
+    gap: 80px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+.navbar img {
+    margin-left: 50px;
+
+}
+
+        /* ================= HERO ================= */
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px 60px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #1677ff;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: auto;
+            color: #a8adbd;
+            line-height: 1.7;
+            font-size: 16px;
+        }
+
+        /* ================= COMMON ================= */
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            color: #8f95a7;
+        }
+
+        /* ================= WHAT IS CONVERTX ================= */
+
+        .about-box {
+            background: #0c0f1a;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 18px;
+
+            padding: 40px;
+
+            text-align: center;
+
+            box-shadow: 0 0 35px rgba(111, 0, 255, 0.08);
+        }
+
+        .about-box p {
+            color: #a8adbd;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+
+        /* ================= WHY CONVERTX ================= */
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: #0c0f1a;
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 16px;
+            padding: 30px 20px;
+
+            text-align: center;
+
+            transition: 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-6px);
+            border-color: rgba(22,119,255,0.5);
+            box-shadow: 0 10px 30px rgba(22,119,255,0.12);
+        }
+
+        .feature-icon {
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature-card p {
+            color: #8f95a7;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* ================= CONVERTERS ================= */
+
+        .converter-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .converter-item {
+            padding: 20px 10px;
+
+            background: #0c0f1a;
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 12px;
+
+            text-align: center;
+            color: #dce0ea;
+
+            transition: 0.3s;
+        }
+
+        .converter-item:hover {
+            transform: translateY(-4px);
+            border-color: #1677ff;
+        }
+
+        /* ================= TECHNOLOGY ================= */
+
+        .tech-section {
+            text-align: center;
+        }
+
+        .tech-list {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .tech {
+            padding: 15px 30px;
+
+            background: #0c0f1a;
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 10px;
+
+            color: #ffffff;
+        }
+
+        /* ================= DEVELOPER ================= */
+
+        .developer {
+            max-width: 700px;
+            margin: auto;
+
+            text-align: center;
+
+            background: #0c0f1a;
+            border: 1px solid rgba(255,255,255,0.08);
+
+            border-radius: 18px;
+            padding: 40px;
+        }
+
+        .developer h2 {
+            margin-bottom: 10px;
+        }
+
+        .developer h3 {
+            color: #1677ff;
+            margin-bottom: 15px;
+        }
+
+        .developer p {
+            color: #8f95a7;
+            line-height: 1.7;
+        }
+
+        /* ================= CTA ================= */
+
+        .cta {
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .cta h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            color: #8f95a7;
+            margin-bottom: 25px;
+        }
+
+        .cta button {
+            border: none;
+            padding: 13px 28px;
+
+            border-radius: 10px;
+
+            background: #1677ff;
+            color: white;
+
+            font-size: 15px;
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow: 0 6px 20px rgba(22,119,255,0.3);
+
+            transition: 0.3s;
+        }
+
+        .cta button:hover {
+            transform: translateY(-3px);
+            background: #005bea;
+            box-shadow: 0 10px 25px rgba(22,119,255,0.45);
+        }
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+
+            border-top: 1px solid rgba(255,255,255,0.08);
+
+            color: #777d90;
+            font-size: 14px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+
+        @media (max-width: 900px) {
+
+            .features {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .converter-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .navbar {
+                padding: 0 25px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .nav-links {
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .converter-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .about-box,
+            .developer {
+                padding: 25px;
+            }
+        }
+        /* ==========================================================================
+   RESPONSIVE MEDIA QUERIES (FULL STACK)
+   ========================================================================== */
+
+/* Large Tablets & Small Laptops (Max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 30px;
+        height: auto;
+        min-height: 70px;
+    }
+
+    .navbar img {
+        margin-left: 0;
+    }
+
+    .navbar button {
+        position: static;
+        top: auto;
+        left: auto;
+        margin-left: 15px;
+        gap: 0;
+        padding: 0.5em 1.2em;
+        font-size: 15px;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .converter-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+}
+
+/* Tablets (Max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 92%;
+    }
+
+    .hero {
+        padding: 50px 15px 40px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .navbar button {
+        margin-left: 0;
+    }
+
+    .converter-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .about-box,
+    .developer {
+        padding: 30px 20px;
+    }
+
+    .cta {
+        padding: 50px 15px;
+    }
+}
+
+/* Large Mobile Devices (Max-width: 600px) */
+@media screen and (max-width: 600px) {
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .converter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tech-list {
+        gap: 10px;
+    }
+
+    .tech {
+        width: 100%;
+        text-align: center;
+        padding: 12px;
+    }
+}
+
+/* Small Mobile Devices (Max-width: 400px) */
+@media screen and (max-width: 400px) {
+    .hero h1 {
+        font-size: 26px;
+    }
+
+    .hero p {
+        font-size: 14px;
+    }
+
+    .converter-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar button {
+        font-size: 13px;
+        padding: 0.4em 0.8em;
+    }
+
+    .cta h2 {
+        font-size: 24px;
+    }
+
+    .cta button {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <img src="WhatsApp_Image_2026-08-24_at_6.23.38_AM-removebg-preview.png" width="200px">
+        <button onclick="location.href='try.html'"> Home </button>
+        <button onclick="location.href='home.html'"> Converters </button>
+        <button onclick="location.href='about.html'"> About </button>
+    </div>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <h1>About <span>ConvertX</span></h1>
+
+        <p>
+            Convert Anything, Anytime. ConvertX is a simple,
+            fast and user-friendly unit conversion tool designed
+            to make everyday conversions quick and easy.
+        </p>
+
+    </section>
+
+
+    <main class="container">
+
+
+        <!-- WHAT IS CONVERTX -->
+
+        <section>
+
+            <div class="section-title">
+                <h2>What is ConvertX?</h2>
+            </div>
+
+            <div class="about-box">
+
+                <p>
+                    ConvertX is a web-based unit converter that helps
+                    users quickly convert values between different units.
+                    Simply enter your value, select the required
+                    conversion and get accurate results instantly.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY CONVERTX -->
+
+        <section style="margin-top: 80px;">
+
+            <div class="section-title">
+
+                <h2>Why Choose ConvertX?</h2>
+
+                <p>
+                    Designed to make conversions simple and efficient.
+                </p>
+
+            </div>
+
+
+            <div class="features">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">⚡</div>
+
+                    <h3>Fast</h3>
+
+                    <p>
+                        Get conversion results quickly without
+                        unnecessary steps.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🎯</div>
+
+                    <h3>Accurate</h3>
+
+                    <p>
+                        Reliable and precise conversion results
+                        whenever you need them.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">✨</div>
+
+                    <h3>Simple UI</h3>
+
+                    <p>
+                        A clean and easy-to-use interface for
+                        everyone.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">📱</div>
+
+                    <h3>Responsive</h3>
+
+                    <p>
+                        Works smoothly across different devices
+                        and screen sizes.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- AVAILABLE CONVERTERS -->
+
+        <section style="margin-top: 80px;">
+
+            <div class="section-title">
+
+                <h2>Available Converters</h2>
+
+                <p>
+                    Convert values across multiple categories.
+                </p>
+
+            </div>
+
+
+            <div class="converter-grid">
+
+                <div class="converter-item">📏 Length</div>
+
+                <div class="converter-item">⚖️ Weight</div>
+
+                <div class="converter-item">🌡️ Temperature</div>
+
+                <div class="converter-item">🚀 Speed</div>
+
+                <div class="converter-item">⏱️ Time</div>
+
+                <div class="converter-item">📐 Area</div>
+
+                <div class="converter-item">🧊 Volume</div>
+
+                <div class="converter-item">💾 Data</div>
+
+                <div class="converter-item">🌀 Pressure</div>
+
+                <div class="converter-item">⚡ Energy</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TECHNOLOGIES -->
+
+        <section style="margin-top: 80px;" class="tech-section">
+
+            <div class="section-title">
+
+                <h2>Technologies Used</h2>
+
+                <p>
+                    Built using simple and powerful web technologies.
+                </p>
+
+            </div>
+
+
+            <div class="tech-list">
+
+                <div class="tech">HTML</div>
+
+                <div class="tech">CSS</div>
+
+                <div class="tech">JavaScript</div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DEVELOPER -->
+
+        <section style="margin-top: 80px;">
+
+            <div class="section-title">
+
+                <h2>Designed & Developed By</h2>
+
+            </div>
+
+
+            <div class="developer">
+
+                <h2>Tamilarasu</h2>
+
+                <h3>Aspiring Software Developer & Creative Designer</h3>
+
+                <p>
+                    ConvertX is a personal frontend project created
+                    to explore UI/UX design, frontend development and
+                    JavaScript-based functionality.
+                </p>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>Ready to Convert?</h2>
+
+        <p>
+            Convert Anything, Anytime with ConvertX.
+        </p>
+
+        <button onclick="goToConverter()">
+            Start Converting
+        </button>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        © 2026 ConvertX. All Rights Reserved.
+
+    </footer>
+
+
+    <script>
+
+        function goToConverter() {
+
+            window.location.href = "home.html";
+
+        }
+
+    </script>
+
+</body>
+</html>

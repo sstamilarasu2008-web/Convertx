@@ -1,0 +1,327 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Roboto", sans-serif;
+     user-select: none;
+     overflow-y: hidden;
+    
+ }
+
+ body {
+     background: #000000;
+ }
+
+ .navbar {
+     width: 100%;
+     height: 70px;
+     background-color: rgb(16, 17, 27);
+     box-shadow: rgb(249, 249, 250) 0px 2px 3px -10px;
+     border-bottom: 1px solid rgb(49, 3, 255);
+ }
+
+ h1 {
+     color: white;
+     font-size: 80px;
+    margin-top: 80px;
+     margin-left: 50px;
+     user-select: none;
+ }
+ h2{
+     color: rgb(24, 122, 242);
+        margin-left: 50px;
+         font-size: 70px;
+         user-select: none;
+ }
+
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 0 0 2px #622bff;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: white;
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #622bff;
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: white;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: white;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px 622BFF;
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+.cimg{
+  top: -450px;
+  left: 900px;
+  position: relative;
+  
+}
+.navbar button {
+ border: none;
+ color: #fff;
+ background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+ border-radius: 20px;
+ background-size: 100% auto;
+ font-family: inherit;
+ font-size: 17px;
+ padding: 0.6em 1.5em;
+ top: -25px;
+ position: relative;
+ left: 800px;
+ gap: 80px;
+ margin-left: 50px;
+ cursor: pointer;
+}
+
+.navbar button:hover {
+ background-position: right center;
+ background-size: 200% auto;
+ -webkit-animation: pulse 2s infinite;
+ animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+ 0% {
+  box-shadow: 0 0 0 0 #05bada66;
+ }
+
+ 70% {
+  box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+ }
+
+ 100% {
+  box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+ }
+}
+h3{
+  color: azure;
+  margin-top: 15px;
+  margin-left: 50px;
+  font-size: 45px;
+}
+.p h4{
+ font-size: 30px;
+  color: aliceblue;
+  position: relative;
+  top: -550px;
+  margin-left: 50px;
+}
+.box1,.box2,.box3,.box4,.box5,.box6{
+  width: 170px;
+  height: 180px;
+  background-color:  rgb(44, 44, 44);
+  position: relative;
+  top: -500px;
+  margin-left: 50px;
+  border-radius: 20px;
+  border: 1px solid blueviolet;
+  overflow: hidden;
+}
+.box1:hover{
+box-shadow: rgba(111, 43, 201, 0.25) 0px 54px 55px, rgba(111, 43, 201, 0.25) 0px -12px 30px, rgba(111, 43, 201, 0.25) 0px 4px 6px, rgba(111, 43, 201, 0.25) 0px 12px 13px, rgba(111, 43, 201, 0.25) 0px -3px 5px;
+
+}
+.box2:hover{
+box-shadow: rgba(111, 43, 201, 0.25) 0px 54px 55px, rgba(111, 43, 201, 0.25) 0px -12px 30px, rgba(111, 43, 201, 0.25) 0px 4px 6px, rgba(111, 43, 201, 0.25) 0px 12px 13px, rgba(111, 43, 201, 0.25) 0px -3px 5px;
+
+}
+.box3:hover{
+box-shadow: rgba(111, 43, 201, 0.25) 0px 54px 55px, rgba(111, 43, 201, 0.25) 0px -12px 30px, rgba(111, 43, 201, 0.25) 0px 4px 6px, rgba(111, 43, 201, 0.25) 0px 12px 13px, rgba(111, 43, 201, 0.25) 0px -3px 5px;
+
+}
+.box4:hover{
+box-shadow: rgba(111, 43, 201, 0.25) 0px 54px 55px, rgba(111, 43, 201, 0.25) 0px -12px 30px, rgba(111, 43, 201, 0.25) 0px 4px 6px, rgba(111, 43, 201, 0.25) 0px 12px 13px, rgba(111, 43, 201, 0.25) 0px -3px 5px;
+
+}
+.box5:hover{
+box-shadow: rgba(111, 43, 201, 0.25) 0px 54px 55px, rgba(111, 43, 201, 0.25) 0px -12px 30px, rgba(111, 43, 201, 0.25) 0px 4px 6px, rgba(111, 43, 201, 0.25) 0px 12px 13px, rgba(111, 43, 201, 0.25) 0px -3px 5px;
+
+}
+.box6:hover{
+box-shadow: rgba(111, 43, 201, 0.25) 0px 54px 55px, rgba(111, 43, 201, 0.25) 0px -12px 30px, rgba(111, 43, 201, 0.25) 0px 4px 6px, rgba(111, 43, 201, 0.25) 0px 12px 13px, rgba(111, 43, 201, 0.25) 0px -3px 5px;
+
+}
+.box1 i{
+  color: rgb(246, 141, 5);
+  font-size: 45px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+h5{
+  color: hsl(181, 100%, 49%);
+  font-size: 30px;
+margin-left: 35px;
+margin-top: 20px;
+}
+.box2 i{
+  color: rgb(246, 141, 5);
+  font-size: 45px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.box3 i{
+  color: rgb(246, 141, 5);
+  font-size: 45px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.box4 i{
+  color: rgb(246, 141, 5);
+  font-size: 45px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.box5 i{
+  color: rgb(246, 141, 5);
+  font-size: 50px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.box6 i{
+  color: rgb(246, 141, 5);
+  font-size: 45px;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.box1,
+.box2,
+.box3,
+.box4,.box5,.box6{
+    display: inline-block;
+    
+    margin: 40px;
+}
+.box5 h5{
+   color: hsl(181, 100%, 49%);
+  font-size: 25px;
+margin-left: 11px;
+margin-top: 20px;
+}
+.box3 h5{
+     color: hsl(181, 100%, 49%);
+  font-size: 30px;
+margin-left: 50px;
+margin-top: 20px;
+}
+.box6 h5{
+     color: hsl(181, 100%, 49%);
+  font-size: 30px;
+margin-left: 50px;
+margin-top: 20px;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px #4c00ff;
+}
+.navbar img{
+  margin-left: 50px;
+ 
+}
+.cursor-trail {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+    z-index: 9999;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 200, 255, 0.35),
+        rgba(100, 0, 255, 0.2)
+    );
+
+    filter: blur(18px);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: left 0.15s ease-out, top 0.15s ease-out;
+}
+
+

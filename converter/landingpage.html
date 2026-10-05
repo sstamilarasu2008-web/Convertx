@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertX</title>
+    <link rel="icon" type="image/png" href="Screenshot_24-8-2026_201329_web.whatsapp.com.jpeg">
+    <link rel="stylesheet" href="landingpage.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+   <div class="navbar">
+    <img src="WhatsApp_Image_2026-08-24_at_6.23.38_AM-removebg-preview.png" width="200px">
+     <button onclick="location.href='landingpage.html'"> Home </button>
+     <button onclick="location.href='home.html'"> Converters </button>
+     <button onclick="location.href='about.html'"> About </button>
+   </div>
+  
+   <h1>Convert Anything,</h1>
+   <h2>Anytime.</h2>
+   <h3>Fast, Simple and accurate</h3>
+  <h3>Unit Conversions.</h3>
+   <!-- From Uiverse.io by mishary_5473 --> 
+<button class="animated-button" onclick="location.href='home.html'">
+  <svg xmlns="http://www.w3.org/2000/svg" class="arr-2" viewBox="0 0 24 24">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text">Explore Converters</span>
+  <span class="circle"></span>
+  <svg xmlns="http://www.w3.org/2000/svg" class="arr-1" viewBox="0 0 24 24">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
+<div class="cimg">
+<img src="cal.png.png" alt="calculator image" width="700px">
+</div>
+<div class="p">
+<h4>Popular Converters</h4>
+</div>
+<div class="box1">
+  <i class="fa-solid fa-ruler"></i>
+  <h5>Length</h5>
+</div>
+<div class="box2">
+  <i class="fa-solid fa-gauge-high"></i>
+  <h5>Speed</h5>
+</div>
+<div class="box3">
+  <i class="fa-solid fa-clock"></i>
+  <h5>Clock</h5>
+</div>
+<div class="box4">
+  <i class="fa-solid fa-weight-hanging"></i>
+  <h5>Weight</h5>
+</div>
+<div class="box5">
+  <i class="fa-solid fa-temperature-half"></i>
+  <h5>Temperature</h5>
+</div>
+<div class="box6">
+  <i class="fa-solid fa-square""></i>
+  <h5>Area</h5>
+</div>
+<div class="cursor-trail"></div>
+
+<script>
+const trail = document.querySelector(".cursor-trail");
+
+let mouseX = 0;
+let mouseY = 0;
+
+let currentX = 0;
+let currentY = 0;
+
+document.addEventListener("mousemove", (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+});
+
+function animate() {
+
+    currentX += (mouseX - currentX) * 0.08;
+    currentY += (mouseY - currentY) * 0.08;
+
+    trail.style.left = currentX + "px";
+    trail.style.top = currentY + "px";
+
+    requestAnimationFrame(animate);
+}
+
+animate();
+</script>
+
+
+</body>
+</html>

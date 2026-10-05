@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+}
+
+body {
+    background: #000000;
+
+
+}
+
+.navbar {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(16, 17, 27);
+    box-shadow: rgb(249, 249, 250) 0px 2px 3px -10px;
+    border-bottom: 1px solid rgb(49, 3, 255);
+
+}
+
+.navbar button {
+    border: none;
+    color: #fff;
+    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+    border-radius: 20px;
+    background-size: 100% auto;
+    font-family: inherit;
+    font-size: 17px;
+    padding: 0.6em 1.5em;
+    top: -3px;
+    position: relative;
+    left: 800px;
+    gap: 80px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.navbar button:hover {
+    background-position: right center;
+    background-size: 200% auto;
+    -webkit-animation: pulse 2s infinite;
+    animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+    0% {
+        box-shadow: 0 0 0 0 #05bada66;
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+    }
+}
+
+.navbar img {
+    margin-left: 50px;
+
+}
+
+.parent {
+    width: 1100px;
+    height: 600px;
+    background-color: #352f2f;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: blueviolet 0px 54px 55px, blueviolet 0px -12px 30px, blueviolet 0px 4px 6px, blueviolet 0px 12px 13px, blueviolet 0px -3px 5px;
+
+}
+
+.parent i {
+    width: 1100px;
+    text-align: center;
+    font-size: 80px;
+    color: rgb(0, 100, 249);
+}
+
+.parent h4 {
+    width: 1100px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(247, 247, 248);
+}
+
+.parent p {
+    width: 1100px;
+    text-align: center;
+    font-size: 30px;
+    color: rgb(251, 1, 185);
+    margin-top: 0;
+
+}
+
+.parent:hover {
+    box-shadow: blueviolet 0px 48px 100px 0px;
+}
+
+.inputsection {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputsection label {
+    text-align: left;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: aliceblue;
+    margin-left: 20px;
+    color: rgb(239, 243, 5);
+    font-weight: 200px;
+}
+
+.inputsection input {
+    width: 1000px;
+    gap: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    height: 50PX;
+    font-size: 30PX;
+    padding: 20PX;
+    border-radius: 30PX;
+    outline: none;
+    color: rgb(27, 0, 235);
+    font-weight: 200px;
+
+
+
+}
+
+.buttonsection {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+    top: -200px;
+    position: relative;
+}
+
+.parent {
+    width: 1100px;
+    min-height: 600px;
+    height: auto;
+    /* Fixed height-ku badhula auto use panni layout flex-a vachukonga */
+    background-color: #181515;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+    box-shadow: blueviolet 0px 54px 55px, blueviolet 0px -12px 30px, blueviolet 0px 4px 6px, blueviolet 0px 12px 13px, blueviolet 0px -3px 5px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+/* Parent elements dimensions fix */
+.parent i,
+.parent h4,
+.parent p {
+    width: 100%;
+    text-align: center;
+}
+
+.parent i {
+    font-size: 80px;
+    color: rgb(0, 100, 249);
+}
+
+.parent h4 {
+    font-size: 40px;
+    color: rgb(247, 247, 248);
+}
+
+.parent p {
+    font-size: 30px;
+    color: rgb(251, 1, 185);
+    margin-top: 0;
+}
+
+/* Negative positioning-ku badhula Flex placement */
+.buttonsection {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: flex-end;
+    position: static;
+    /* Position top-200px remove panniyaachu */
+    margin-top: 20px;
+    margin-left: 20%;
+
+
+}
+
+.inputsection input:last-of-type {
+    background-color: transparent;
+    border: 2PX solid rgb(31, 164, 11);
+    box-shadow: rgb(31, 164, 11) 0px 5px 15px;
+    color: #fff;
+}
+
+.buttonsection button {
+    width: 200px;
+    height: 50px;
+    margin-left: 8px;
+    border-radius: 35px;
+    font-size: 25px;
+
+
+
+}
+
+/* ===== Animated Button ===== */
+
+.convert-btn {
+    position: relative;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6c5ce7, #00cec9);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 8px 25px rgba(108, 92, 231, 0.35);
+}
+
+/* Shine effect */
+.convert-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(120deg,
+            transparent,
+            rgba(255, 255, 255, 0.45),
+            transparent);
+    transform: skewX(-25deg);
+    transition: 0.6s;
+}
+
+/* Hover */
+.convert-btn:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow:
+        0 12px 30px rgba(108, 92, 231, 0.5),
+        0 0 20px rgba(0, 206, 201, 0.3);
+}
+
+/* Shine move */
+.convert-btn:hover::before {
+    left: 130%;
+}
+
+/* Click animation */
+.convert-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 12px rgba(108, 92, 231, 0.3);
+}
+
+/* Floating animation */
+@keyframes floatButton {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+.convert-btn {
+    animation: floatButton 3s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stop floating while hovering */
+.convert-btn:hover {
+    animation-play-state: paused;
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (MEDIA QUERIES)
+   ========================================== */
+
+/* Medium Devices & Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        height: auto;
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar img {
+        margin-left: 0;
+    }
+
+    .navbar button {
+        position: static;
+        left: 0;
+        margin-left: 10px;
+        top: 0;
+        font-size: 15px;
+        padding: 0.5em 1em;
+    }
+
+    .parent {
+        width: 90%;
+        max-width: 800px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: 40px auto;
+    }
+
+    .inputsection input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .buttonsection {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .navbar button {
+        margin: 5px;
+    }
+
+    .parent {
+        width: 95%;
+        padding: 20px 15px;
+        margin: 20px auto;
+    }
+
+    .parent i {
+        font-size: 50px;
+    }
+
+    .parent h4 {
+        font-size: 28px;
+    }
+
+    .parent p {
+        font-size: 20px;
+    }
+
+    .inputsection label {
+        font-size: 20px;
+        margin-left: 0;
+    }
+
+    .inputsection input {
+        width: 100%;
+        margin-left: 0;
+        font-size: 20px;
+        height: 45px;
+        padding: 10px 15px;
+    }
+
+    .buttonsection {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        gap: 15px;
+    }
+
+    .buttonsection button {
+        width: 100%;
+        max-width: 280px;
+        margin-left: 0;
+    }
+}
+
+/* Extra Small Mobile Devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .parent h4 {
+        font-size: 22px;
+    }
+
+    .parent p {
+        font-size: 16px;
+    }
+
+    .inputsection label {
+        font-size: 16px;
+    }
+
+    .inputsection input {
+        font-size: 16px;
+    }
+
+    .buttonsection button {
+        font-size: 18px;
+        height: 45px;
+    }
+}
+
+.inputsection input:first-of-type:focus {
+    box-shadow:
+        /* blueviolet 0px 54px 55px, blueviolet 0px -12px 30px,*/
+        blueviolet 0px 4px 6px, blueviolet 0px 12px 13px, blueviolet 0px -3px 5px;
+
+}

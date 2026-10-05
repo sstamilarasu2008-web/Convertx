@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConvertX</title>
+    <link rel="icon" type="image/png" href="Screenshot_24-8-2026_201329_web.whatsapp.com.jpeg">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <img src="WhatsApp_Image_2026-08-24_at_6.23.38_AM-removebg-preview.png" width="200px">
+        <button onclick="location.href='try.html'"> Home </button>
+        <button onclick="location.href='home.html'"> Converters </button>
+        <button onclick="location.href='about.html'"> About </button>
+    </div>
+
+    <div class="search">
+        <input type="text" placeholder="Search Converter..." id="searchbar">
+
+    </div>
+    <div class="ic">
+        <i class="fa fa-search"></i>
+    </div>
+
+    <div class="parent">
+
+        <div class="box" onclick="location.href='cm.html'">
+            <i class="fa-solid fa-ruler-horizontal"></i>
+            <h4>CM → Inches</h4>
+            <p>Convert CM to Inches.</p>
+        </div>
+
+        <div class="box" onclick="location.href='meter.html'">
+            <i class="fa-solid fa-ruler"></i>
+            <h4>Meter → Feet</h4>
+            <p>Convert Meter to Feet.</p>
+        </div>
+
+        <div class="box" onclick="location.href='km.html'">
+            <i class="fa-solid fa-road"></i>
+            <h4>KM → Mile</h4>
+            <p>Convert Kilometer to Mile.</p>
+        </div>
+
+        <div class="box" onclick="location.href='inch.html'">
+            <i class="fa-solid fa-ruler-combined"></i>
+            <h4>Inch → CM</h4>
+            <p>Convert inch to Centimeter.</p>
+        </div>
+
+        <div class="box"  onclick="location.href='kilogram.html'">
+            <i class="fa-solid fa-weight-hanging"></i>
+            <h4>KG → Pound</h4>
+            <p>Convert kilogram to Pound.</p>
+        </div>
+
+        <div class="box" onclick="location.href='gram.html'">
+            <i class="fa-solid fa-weight-scale"></i>
+            <h4>Gram → KG</h4>
+            <p>Convert Gram to kilogram.</p>
+        </div>
+
+        <div class="box" onclick="location.href='cel.html'">
+            <i class="fa-solid fa-temperature-half"></i>
+            <h4>Celsius → FH</h4>
+            <p>Convert Celsius to Fahrenheit.</p>
+        </div>
+
+        <div class="box" onclick="location.href='fah.html'">
+            <i class="fa-solid fa-temperature-high">
+            </i>
+            <h4>FH → Celsius</h4>
+            <p>Convert Fahrenheit to Celsius.</p>
+        </div>
+
+        <div class="box" onclick="location.href='cell.html'">
+            <i class="fa-solid fa-temperature-low">
+            </i>
+            <h4>Celsius → K</h4>
+            <p>Convert Celsius to Kelvin.</p>
+        </div>
+
+        <div class="box" onclick="location.href='liter.html'">
+            <i class="fa-solid fa-flask"></i>
+            <h4>Liter → ML</h4>
+            <p>Convert Liter to Milliliter.</p>
+        </div>
+
+        <div class="box" onclick="location.href='lgg.html'">
+            <i class="fa-solid fa-droplet"></i>
+            <h4>Liter →Gallon</h4>
+            <p>Convert Liter to Gallon.</p>
+        </div>
+
+        <div class="box" onclick="location.href='ml.html'">
+            <i class="fa-solid fa-vial"></i>
+            <h4>ML → Liter</h4>
+            <p>Convert Milliliter → Liter</p>
+        </div>
+
+        <div class="box" onclick="location.href='kb.html'">
+            <i class="fa-solid fa-hard-drive"></i>
+            <h4>KB → MB</h4>
+            <p>Convert KB to MB.</p>
+        </div>
+
+        <div class="box" onclick="location.href='mb.html'">
+            <i class="fa-solid fa-database"></i>
+            <h4>MB → GB</h4>
+            <p>Convert MB to GB.</p>
+        </div>
+
+        <div class="box" onclick="location.href='gb.html'">
+            <i class="fa-solid fa-server"></i>
+            <h4>GB → TB</h4>
+            <p>Convert GB to TB.</p>
+        </div>
+
+        <div class="box" onclick="location.href='sec.html'">
+            <i class="fa-solid fa-stopwatch"></i>
+            <h4>Sec → Min</h4>
+            <p>Convert Seconds to Minutes.</p>
+        </div>
+
+        <div class="box" onclick="location.href='min.html'">
+            <i class="fa-solid fa-clock"></i>
+            <h4>Min → Hours</h4>
+            <p>Convert Minutes to Hours.</p>
+        </div>
+
+        <div class="box" onclick="location.href='hour.html'">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h4>Hours→Days</h4>
+            <p>Convert Hours to Days.</p>
+        </div>
+
+        <div class="box" onclick="location.href='kw.html'">
+            <i class="fa-solid fa-gauge-high"></i>
+            <h4>KW/h→MPH</h4>
+            <p>Convert KW/H to MPH.</p>
+        </div>
+
+        <div class="box" onclick="location.href='mph.html'">
+            <i class="fa-solid fa-car"></i>
+            <h4>MPH→KM/H</h4>
+            <p>Convert MPH to KM/H.</p>
+        </div>
+
+
+
+
+    </div>
+
+
+    <script>
+        const searchInput = document.getElementById("searchbar");
+const boxes = document.querySelectorAll(".parent .box");
+
+searchInput.addEventListener("input", () => {
+
+    const searchText = searchInput.value.toLowerCase();
+
+    boxes.forEach(box => {
+
+        const boxText = box.textContent.toLowerCase();
+
+        if (boxText.includes(searchText)) {
+            box.style.display = "block";
+        } else {
+            box.style.display = "none";
+        }
+
+    });
+
+});
+    </script>
+</body>
+
+</html>
